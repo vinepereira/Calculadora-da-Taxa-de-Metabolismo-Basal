@@ -34,15 +34,23 @@ const calcFormula = () => {
         const somaHomem = 66 + (13.8 * peso) + (5 * altura) + (6.8 * idade);
         const somaMulher = 655 + (9.6 * peso) + (1.8 * altura) + (4.7 * idade);
         if (peso && idade && altura && (verificar[0].checked || verificar[1].checked)) {
-            if (verificar[0].checked) {
-                total.innerHTML = `Você tem ${Math.floor(somaHomem)}kcal de TMB`;
-            } else if (verificar[1].checked) {
-                total.innerHTML = `Você tem ${Math.floor(somaMulher)}kcal de TMB`;
+
+            if (Number.isInteger(Number(peso)) && Number.isInteger(Number(idade)) && Number.isInteger(Number(altura))) {
+                    if (verificar[0].checked) {
+                        total.innerHTML = `Você tem ${Math.floor(somaHomem)}kcal de TMB`;
+                    } else if (verificar[1].checked) {
+                        total.innerHTML = `Você tem ${Math.floor(somaMulher)}kcal de TMB`;
+                    }
+            } else {
+                alert('Coloque somente números inteiros sem vírgulas e pontos.');
             }
+            
         } else {
-            alert('Por favor, preencha seus dados.');
+            alert('Por favor, preencha seus dados.')
         }
     }
     button.addEventListener('click', soma);
 }
 calcFormula();
+
+// Number.isInteger(Number(peso))
