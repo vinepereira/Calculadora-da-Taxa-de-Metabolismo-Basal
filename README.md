@@ -1,5 +1,5 @@
 # Calculadora da Taxa de Metabolismo Basal
-Decidi fazer este projeto para treinar todos os conceitos aprendidos até o momento no curso da ORIGAMID.
+Decidi fazer este projeto para treinar alguns dos conceitos aprendidos até o momento no curso da ORIGAMID.
 
 # Conceitos usados:
 - Interação entre input radio e imagem correspondente ao gênero selecionado.
