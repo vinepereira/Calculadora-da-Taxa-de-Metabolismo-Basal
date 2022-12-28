@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Calculadora de Metabolismo Basal</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Calculadora de Metabolismo Basal</h1>
+        <form>
+            <div class="client-data">
+                <div class="client-sex-container">
+                    <div class="client-sex">
+                        <div class="client-homem js-sexo">
+                            <input type="radio" name="tipo" value="homem" id="homem">
+                            <label for="homem">Homem</label>
+                        </div>
+                        <div class="client-mulher js-sexo">
+                            <input type="radio" name="tipo" value="mulher" id="mulher">
+                            <label for="mulher">Mulher</label>
+                        </div>
+                    </div>
+                    <div class="client-img">
+                        <img src="./assets/img/man.png" alt="Foto de um homem">
+                        <img src="./assets/img/woman.png" alt="Foto de uma mulher">
+                    </div>
+                </div>
+
+                <div class="client-info">
+
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" id="peso" placeholder="Digite seu peso KG (somente números)"
+                        required>
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" placeholder="Digite sua idade (somente números)"
+                        required>
+                    <label for="altura">Altura</label>
+                    <input type="number" name="altura" id="altura" placeholder="Digite sua altura (somente números)"
+                        required>
+                    <button>Calcular</button>
+                </div>
+            </div>
+            <div class="total">
+                <h2>Digite seus dados e calcule sua TMB.</h2>
+            </div>
+        </form>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

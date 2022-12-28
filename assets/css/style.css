@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    background-color: aqua;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, .1);
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+
+.client-homem,
+.client-mulher {
+    margin-bottom: 10px;
+}
+
+.client-data,
+.client-info {
+    display: grid;
+}
+
+.client-sex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.client-img {
+    margin-top: 5px;
+    max-width: 50px;
+}
+
+
+.client-img img {
+    display: none;
+}
+
+
+.client-info input {
+    margin-bottom: 10px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.client-info input:focus {
+    outline: none;
+    border: 1px solid rgb(19, 19, 19);
+    background-color: #fff;
+
+}
+
+.client-info input:last-child {
+    margin-bottom: 40px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    justify-self: center;
+    padding: 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(196, 57, 2);
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.total {
+    text-align: center;
+}
+
+@media (max-width:450px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    input::placeholder {
+        font-size: 0.7rem;
+    }
+}
+
+.ativo {
+    display: block !important;
+}
