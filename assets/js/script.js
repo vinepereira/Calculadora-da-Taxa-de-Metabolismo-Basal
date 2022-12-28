@@ -42,8 +42,6 @@ const calcFormula = () => {
         } else {
             alert('Falta preencher os dados');
         }
-
-
     }
     button.addEventListener('click', soma);
 }
