@@ -40,7 +40,7 @@ const calcFormula = () => {
                 total.innerHTML = `Você tem ${Math.floor(somaMulher)}kcal de TMB`;
             }
         } else {
-            alert('Falta preencher os dados');
+            alert('Por favor, preencha seus dados.');
         }
     }
     button.addEventListener('click', soma);
