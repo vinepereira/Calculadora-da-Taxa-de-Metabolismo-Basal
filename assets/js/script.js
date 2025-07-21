@@ -31,8 +31,9 @@ const calcFormula = () => {
         const peso = document.querySelector('#peso').value;
         const idade = document.querySelector('#idade').value;
         const altura = document.querySelector('#altura').value;
-        const somaHomem = 66 + (13.8 * peso) + (5 * altura) + (6.8 * idade);
-        const somaMulher = 655 + (9.6 * peso) + (1.8 * altura) + (4.7 * idade);
+        const somaHomem = 66 + (13.8 * peso) + (5 * altura) - (6.8 * idade);
+        const somaMulher = 655 + (9.6 * peso) + (1.8 * altura) - (4.7 * idade);
+
         if (peso && idade && altura && (verificar[0].checked || verificar[1].checked)) {
 
             if (Number.isInteger(Number(peso)) && Number.isInteger(Number(idade)) && Number.isInteger(Number(altura))) {
