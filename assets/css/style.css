@@ -122,3 +122,16 @@ button:hover {
 .ativo {
     display: block !important;
 }
+
+.formula-chooser {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+.formula-chooser label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
